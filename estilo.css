@@ -1,0 +1,184 @@
+body {
+    background-color: #F3F1F1;
+}
+
+main, body {
+    padding: 2em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 1200px) {
+    .menuSeparador {
+        border: 1.5px solid #FB9F06;
+        max-height: 1.5em;
+    }
+
+    .menuSeparador {
+        border: 1.5px solid #FB9F06;
+        max-width: 1.5em;
+    }
+}
+
+.logoPrincipal {
+    max-width: 120px;
+    max-height: 120px;
+    scale: 1.4;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#foodImg {
+    max-width: 700px;
+    max-height: 700px;
+}
+
+.mainTitle {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100.5%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 50%;
+}
+
+.highlight {
+    color: #FB9F06;
+}
+
+.subTitle {
+    font-family: 'Orienta', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 100.5%;
+    max-width: 60%;
+}
+
+.underline {
+    text-decoration-line: underline;
+}
+
+footer {
+    background-color: #dddddd;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+}
+
+.categoriasLista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2em;
+}
+.informacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#categoriaTitulo {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 1.5em;
+
+    color: rgba(234, 36, 36, 0.78);
+}
+
+
+#menuAbas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1.5em;
+}
+
+@media (max-width: 670px) {
+    #menuAbas {
+        max-width: 400px;
+        font-size: 14px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menuSeparador {
+        max-width: 1.5em;
+        height: .2em;
+        color: #FB9F06;
+    }
+
+    .mainTitle {
+        font-family: 'Outfit', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 100.5%;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .mainTitle, .subTitle {
+        max-width: 100%;
+
+    }
+
+    #foodImg {
+        display: none;
+    }
+
+    main, section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .categoriasLista {
+        font-size: 16px;
+    }
+
+    #categoriaTitulo {
+        font-size: 26px;
+    }
+
+    .informacao {
+        scale: .5;
+    }
+}
